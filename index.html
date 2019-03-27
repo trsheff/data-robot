@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <heder>
@@ -26,14 +27,78 @@
     <div class="main-content">
         <div class="main-content__txt">
             <h1>Practical Machine Learning and AI with World-Class Data Scientists</h1>
-            <p>A development program for Ukrainian Software Engineers, Data Engineers, Data Scientists of all skill levels.</p>
-            <p>We need people like you to help us grow further. We offer a training program where you will be involved in customer-oriented
-                Data Science activities, development of the DataRobot platform, or creating public-facing DS content.</p>
+            <p class="main-content__txt-p1">A development program for Ukrainian Software Engineers, Data Engineers, Data
+                Scientists of all skill
+                levels.</p>
+            <p class="main-content__txt-p2">We need people like you to help us grow further. We offer a training program
+                where you will be involved
+                in customer-oriented
+                Data Science activities, development of the DataRobot platform, or creating public-facing DS
+                content.</p>
         </div>
-        <div class="main-content__form">forma</div>
+        <div class="main-content__form">
+            <div class="main-content__form-cn">
+                <form action="" id="info-form">
+                    <input name="user" data-validation="length alphanumeric"
+                           data-validation-length="3-12"
+                           data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)"
+                           placeholder="Full name">
+                    <input name="email" data-validation="email" placeholder="Email">
+
+                    <input name="position" data-validation="length alphanumeric"
+                           data-validation-length="3-12"
+                           data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)"
+                           placeholder="Current position">
+                    <input name="current-expertise" data-validation="length alphanumeric"
+                           data-validation-length="3-12"
+                           data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)"
+                           placeholder="What is your current expertise in Data Science?">
+
+                    <textarea name="interest" id="interest"
+                              placeholder="Why are you interested in this program and what would you like to achieve?"></textarea>
+                    <input type="submit" value="Sign up for the program for free">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="middle-content">
+        <p>At DataRobot, having machine learning in production is what our product is about. Hundreds of high-profile organizations across the world use our models every day and base their business operations on them.</p>
+    </div>
+    <div class="bottom-content">
+        <div class="b__title">
+            <h3>Why you will benefit from the program</h3>
+        </div>
+        <div class="bottom-content__wrap">
+            <div class="bottom-content__wrap-item">
+                <img src="img/004-industry.png" alt="">
+                <p>We know how to operationalize Machine Learning in the real world and ready to share this knowledge with you</p>
+            </div>
+            <div class="bottom-content__wrap-item">
+                <img src="img/004-industry.png" alt="">
+                <p>We know how to operationalize Machine Learning in the real world and ready to share this knowledge with you</p>
+            </div>
+            <div class="bottom-content__wrap-item">
+                <img src="img/004-industry.png" alt="">
+                <p>We know how to operationalize Machine Learning in the real world and ready to share this knowledge with you</p>
+            </div>
+            <div class="bottom-content__wrap-item">
+                <img src="img/004-industry.png" alt="">
+                <p>We know how to operationalize Machine Learning in the real world and ready to share this knowledge with you</p>
+            </div>
+        </div>
     </div>
 </div>
-<footer></footer>
-
+<footer>THE BEST FOOTER! Just believe me)))</footer>
 </body>
+<script src="js/jquery.form-validator.min.js"></script>
+<script>
+
+    $.validate({
+
+    });
+
+    // Restrict presentation length
+    $('#interest').restrictLength($('#pres-max-length'));
+
+</script>
 </html>
