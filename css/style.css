@@ -420,7 +420,7 @@ body{
 }
 #info-form input{
     width: 100%;
-    background: #fff;
+    background-color: #fff;
     border: none;
     color: #7b91a2;
     padding: 15px 0px 15px 15px;
@@ -449,6 +449,11 @@ body{
 }
 .help-block.form-error{
     color: #bf2b22;
+}
+#info-form input.error, #info-form select.error {
+    border-color: #b94a48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 0, 0, 1);
+    box-shadow: 0 1px 1px 0px rgb(234, 0, 0);
 }
 .middle-content{
     text-align: center;
@@ -497,3 +502,7 @@ footer{
     border-top: 1px solid #2d8fe226;
 }
 /*end main style*/
+
+/*start responsive style*/
+
+/*end responsive style*/
