@@ -1,6 +1,8 @@
 <?php
 /* Template Name: Data Robot Test Task */
 ?>
+
+<html lang="en">
 <?php wp_head();?>
 <body>
 <heder>
@@ -73,7 +75,32 @@
         </div>
     </div>
 </div>
-<footer>THE BEST FOOTER! Just believe me)))</footer>
-</body>
+<footer>
+    <div class="footer-cn container">
+        <div class="footer-cn__item footer-cn__left">
+            <img src="img/ico-1.png" alt="">
+            <div class="footer-cn__item-txt">
+                <span>DataRobot, Inc. © 2012</span>
+            </div>
+        </div>
+        <div class="footer-cn__item footer-cn__center">
+            <div class="footer-cn__item-social fa"><a href="#"><img src="img/fa-k.png" alt="logo"><span>Share</span></a></div>
+            <div class="footer-cn__item-social in"><a href="#"><img src="img/in.png" alt="logo"><span>Share</span></a></div>
+            <div class="footer-cn__item-social twt"><a href="#"><img src="img/twt.png" alt="logo"><span>Share</span></a></div>
+            <div class="footer-cn__item-social gplus"><a href="#"><img src="img/gplus.png" alt="logo"><span>Share</span></a></div>
+        </div>
+        <div class="footer-cn__item footer-cn__right">
+            <div class="footer-cn__item-txt">
+                <span>Better predictions.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $.validate({
 
+    });
+</script>
 <?php wp_footer(); ?>
+</body>
+</html>
